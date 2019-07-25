@@ -1,1 +1,20 @@
-@import 'reset'
+@import "../generic/reset";
+@import "../settings/fonts";
+@import "../settings/colors";
+
+h1 {
+  font-style: $font-second;
+  color: $color-text;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+  font-style: $font-primary;
+  color: $color-text;
+}
