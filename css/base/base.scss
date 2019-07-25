@@ -2,8 +2,12 @@
 @import "../settings/fonts";
 @import "../settings/colors";
 
+body {
+  background-color: $color-bg;
+}
+
 h1 {
-  font-style: $font-second;
+  font-family: $font-second;
   color: $color-text;
 }
 
@@ -15,6 +19,6 @@ h6,
 p,
 a,
 li {
-  font-style: $font-primary;
+  font-family: $font-primary;
   color: $color-text;
 }

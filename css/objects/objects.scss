@@ -1,0 +1,13 @@
+.header-nav {
+  padding-top: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  > .item {
+    font-size: 50px;
+  }
+  > .logo {
+    width: 282px;
+    height: 81px;
+  }
+}
