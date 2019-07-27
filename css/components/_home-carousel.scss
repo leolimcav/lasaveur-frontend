@@ -1,0 +1,18 @@
+.content-carousel {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.item-text {
+  > .title {
+    // font-size: 52px;
+    @include set-font-size(52px);
+  }
+}
+
+.photo-section {
+  > .image {
+    width: 812px;
+    height: 372px;
+  }
+}

@@ -1,1 +1,19 @@
-/* No CSS *//*# sourceMappingURL=components.css.map */
+.content-carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.item-text > .title {
+  font-size: 3.25rem;
+  font-style: normal;
+}
+
+.photo-section > .image {
+  width: 812px;
+  height: 372px;
+}
