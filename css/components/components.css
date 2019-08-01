@@ -1,4 +1,4 @@
-.content-carousel {
+.carousel-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6,14 +6,70 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.item-text > .title {
-  font-size: 3.25rem;
-  font-style: normal;
+.plate-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.photo-section > .image {
+.plate-text > .title {
+  font-size: 52px;
+  /* add PX (or original value) as backup */
+  /* do nothing, "inherit" has no unit */
+  line-height: 75;
+  line-height: 4.6875rem;
+  letter-spacing: 0.2025rem;
+}
+
+.plate-text > .description {
+  font-size: 46px;
+  /* add PX (or original value) as backup */
+  /* do nothing, "inherit" has no unit */
+  line-height: 75;
+  line-height: 4.6875rem;
+  letter-spacing: 0.1725rem;
+}
+
+.plate-text > .price {
+  font-size: 46px;
+  /* add PX (or original value) as backup */
+  /* do nothing, "inherit" has no unit */
+  line-height: 75;
+  line-height: 4.6875rem;
+  letter-spacing: 0.1725rem;
+}
+
+.plate-text > .button {
+  width: 260px;
+  padding: 24.7px 68.1px 22.3px 99.9px;
+  background-color: #161616;
+  color: #ffffff;
+  border-radius: 33px;
+  font-size: 20px;
+  /* add PX (or original value) as backup */
+  /* do nothing, "inherit" has no unit */
+  line-height: 50;
+  line-height: 3.125rem;
+  letter-spacing: 0.0625rem;
+}
+
+.plate-section > .image {
   width: 812px;
   height: 372px;
 }

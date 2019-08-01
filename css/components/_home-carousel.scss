@@ -1,16 +1,49 @@
-.content-carousel {
+@import "../tools/tools";
+@import "../settings/colors";
+
+.carousel-wrapper {
   display: flex;
   flex-flow: row wrap;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
 }
 
-.item-text {
+.plate-text {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
   > .title {
-    // font-size: 52px;
     @include set-font-size(52px);
+    @include rem-line-height(75);
+    @include letter-spacing(3.24);
+  }
+
+  > .description {
+    @include set-font-size(46px);
+    @include rem-line-height(75);
+    @include letter-spacing(2.76);
+  }
+
+  > .price {
+    @include set-font-size(46px);
+    @include rem-line-height(75);
+    @include letter-spacing(2.76);
+  }
+  > .button {
+    width: 260px;
+    padding: 24.7px 68.1px 22.3px 99.9px;
+    background-color: $color-text;
+    color: $color-bg;
+    border-radius: 33px;
+    @include set-font-size(20px);
+    @include rem-line-height(50);
+    @include letter-spacing(1);
   }
 }
 
-.photo-section {
+.plate-section {
   > .image {
     width: 812px;
     height: 372px;
