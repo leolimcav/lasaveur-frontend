@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,26 +9,36 @@
       href="https://fonts.googleapis.com/css?family=Darker+Grotesque:700|Didact+Gothic&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/base/base.css" />
     <link rel="stylesheet" href="./css/objects/objects.css" />
     <link rel="stylesheet" href="./css/components/components.css" />
   </head>
   <body>
-    <nav class="header-wrapper">
-      <a href="#" class="item">menu</a>
-      <a href="#" class="logo"><img src="./img/logo.png" alt="saveur"/></a>
-      <a href="#" class="item">login</a>
-    </nav>
-    <main class="carousel-wrapper">
-      <section class="plate-section">
-        <img src="./img/prato.png" alt="prato" class="image" />
-      </section>
-      <section class="plate-text">
-        <h1 class="title">Launch of the month</h1>
-        <p class="description">Pasta a la saveur</p>
-        <span class="price">R&dollar; 39,99</span>
-        <button class="button">Buy Now</button>
-      </section>
-    </main>
+    <div class="wrapper">
+      <nav class="header-wrapper">
+        <a href="#" class="item">menu</a>
+        <a href="#" class="logo"><img src="./img/logo.png" alt="saveur"/></a>
+        <a href="#" class="item">login</a>
+      </nav>
+      <main class="carousel-wrapper">
+        <section class="plate-section">
+          <img src="./img/prato.png" alt="prato" class="image" />
+        </section>
+        <section class="plate-text">
+          <h1 class="title">Lunch of the month</h1>
+          <div class="description-wrapper">
+            <p class="description">Pasta a la saveur</p>
+            <span class="price">R$ 39,99</span>
+          </div>
+          <button class="button">
+            <i class="material-icons">add_shopping_cart</i>Buy Now
+          </button>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

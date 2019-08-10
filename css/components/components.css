@@ -1,4 +1,9 @@
+.wrapper {
+  height: 100vh;
+}
+
 .carousel-wrapper {
+  height: 89%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6,7 +11,6 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -16,6 +20,7 @@
 }
 
 .plate-text {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,6 +31,9 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .plate-text > .title {
@@ -37,7 +45,20 @@
   letter-spacing: 0.2025rem;
 }
 
-.plate-text > .description {
+.plate-text > .description-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.plate-text > .description-wrapper > .description {
   font-size: 46px;
   /* add PX (or original value) as backup */
   /* do nothing, "inherit" has no unit */
@@ -46,18 +67,23 @@
   letter-spacing: 0.1725rem;
 }
 
-.plate-text > .price {
+.plate-text > .description-wrapper > .price {
   font-size: 46px;
   /* add PX (or original value) as backup */
   /* do nothing, "inherit" has no unit */
   line-height: 75;
   line-height: 4.6875rem;
   letter-spacing: 0.1725rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .plate-text > .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 260px;
-  padding: 24.7px 68.1px 22.3px 99.9px;
+  height: 73px;
   background-color: #161616;
   color: #ffffff;
   border-radius: 33px;
@@ -67,6 +93,13 @@
   line-height: 50;
   line-height: 3.125rem;
   letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .plate-section > .image {

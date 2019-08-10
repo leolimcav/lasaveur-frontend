@@ -1,45 +1,67 @@
 @import "../tools/tools";
 @import "../settings/colors";
 
+.wrapper {
+  height: 100vh;
+}
+
 .carousel-wrapper {
+  height: 89%;
+
   display: flex;
   flex-flow: row wrap;
-  height: 100vh;
-
   justify-content: center;
   align-items: center;
 }
 
 .plate-text {
+  height: 100%;
+  // position: relative;
+
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
+  align-items: flex-end;
   > .title {
     @include set-font-size(52px);
     @include rem-line-height(75);
     @include letter-spacing(3.24);
+    // position: relative;
   }
 
-  > .description {
-    @include set-font-size(46px);
-    @include rem-line-height(75);
-    @include letter-spacing(2.76);
-  }
+  > .description-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    // justify-content: center;
+    align-items: flex-end;
 
-  > .price {
-    @include set-font-size(46px);
-    @include rem-line-height(75);
-    @include letter-spacing(2.76);
+    > .description {
+      @include set-font-size(46px);
+      @include rem-line-height(75);
+      @include letter-spacing(2.76);
+    }
+
+    > .price {
+      @include set-font-size(46px);
+      @include rem-line-height(75);
+      @include letter-spacing(2.76);
+      justify-self: center;
+    }
   }
   > .button {
+    display: flex;
     width: 260px;
-    padding: 24.7px 68.1px 22.3px 99.9px;
-    background-color: $color-text;
-    color: $color-bg;
+    height: 73px;
+    // padding: 24.7px 68.1px 22.3px 99.9px;
+    background-color: $color-black;
+    color: $color-white;
     border-radius: 33px;
     @include set-font-size(20px);
     @include rem-line-height(50);
     @include letter-spacing(1);
+    text-transform: uppercase;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
 
