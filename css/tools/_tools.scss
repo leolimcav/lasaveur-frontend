@@ -1,0 +1,31 @@
+@mixin set-font-size($value) {
+  font-size: $value; /* add PX (or original value) as backup */
+
+  @if ($value is inherit) {
+    /* do nothing, "inherit" has no unit */
+  } @else {
+    font-size: remify($value);
+  }
+}
+
+@function remify($value) {
+  /* separate mixin, so it can be used elsewhere */
+  $u: unit($value);
+
+  @if ($u is "px") {
+    @return unit(value/16, "rem");
+  } @else {
+    @return unit(value, $u);
+  }
+}
+
+@mixin rem-line-height($value) {
+  @if ($value > 0) {
+    line-height: $value;
+    line-height: ($value / 16) * 1rem;
+  }
+}
+
+@mixin letter-spacing($letterspacing) {
+  letter-spacing: ($letterspacing / 16) * 1rem;
+}

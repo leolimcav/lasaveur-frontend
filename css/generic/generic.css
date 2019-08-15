@@ -140,26 +140,3 @@ table {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
-body {
-  background-color: #ffffff;
-  height: 100%;
-}
-
-h1 {
-  font-family: "Darker Grotesque", sans-serif;
-  color: #161616;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-li,
-span {
-  font-family: "Didact Gothic", sans-serif;
-  color: #161616;
-}

@@ -1,1 +1,110 @@
-/* No CSS *//*# sourceMappingURL=components.css.map */
+.wrapper {
+  height: 100vh;
+  background-image: url("../../img/bg-elipse.svg");
+  background-repeat: no-repeat;
+  background-position: 47.36% -33.42%;
+}
+
+.carousel-wrapper {
+  height: 89%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plate-text {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+  left: -9%;
+}
+
+.plate-text > .title {
+  font-size: 52px;
+  /* add PX (or original value) as backup */
+  /* do nothing, "inherit" has no unit */
+  line-height: 75;
+  line-height: 4.6875rem;
+  letter-spacing: 0.2025rem;
+  position: relative;
+}
+
+.plate-text > .description-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.plate-text > .description-wrapper > .description {
+  font-size: 46px;
+  /* add PX (or original value) as backup */
+  /* do nothing, "inherit" has no unit */
+  line-height: 75;
+  line-height: 4.6875rem;
+  letter-spacing: 0.1725rem;
+}
+
+.plate-text > .description-wrapper > .price {
+  font-size: 46px;
+  /* add PX (or original value) as backup */
+  /* do nothing, "inherit" has no unit */
+  line-height: 75;
+  line-height: 4.6875rem;
+  letter-spacing: 0.1725rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.plate-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 1;
+          flex: 0 0 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.plate-section > .image {
+  width: 812px;
+  height: 372px;
+}

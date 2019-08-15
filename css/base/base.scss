@@ -2,9 +2,14 @@
 @import "../settings/fonts";
 @import "../settings/colors";
 
+body {
+  background-color: $color-bg;
+  height: 100%;
+}
+
 h1 {
-  font-style: $font-second;
-  color: $color-text;
+  font-family: $font-second;
+  color: $color-black;
 }
 
 h2,
@@ -14,7 +19,8 @@ h5,
 h6,
 p,
 a,
-li {
-  font-style: $font-primary;
-  color: $color-text;
+li,
+span {
+  font-family: $font-primary;
+  color: $color-black;
 }

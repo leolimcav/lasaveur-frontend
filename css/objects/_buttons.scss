@@ -1,0 +1,26 @@
+@import "../settings/colors";
+@import "../tools/tools";
+
+.shopping-button {
+  width: 260px;
+  height: 73px;
+  color: $color-white;
+  @include set-font-size(20px);
+  @include rem-line-height(50);
+  @include letter-spacing(1);
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: $color-black;
+  border-radius: 33px;
+}
+
+// .large-button {
+// }
+
+// .medium-button {
+// }
+
+// .small-button {
+// }
