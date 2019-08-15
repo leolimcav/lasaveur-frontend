@@ -21,3 +21,27 @@
   width: 282px;
   height: 81px;
 }
+
+.shopping-button {
+  width: 260px;
+  height: 73px;
+  color: #ffffff;
+  font-size: 20px;
+  /* add PX (or original value) as backup */
+  /* do nothing, "inherit" has no unit */
+  line-height: 50;
+  line-height: 3.125rem;
+  letter-spacing: 0.0625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #161616;
+  border-radius: 33px;
+}

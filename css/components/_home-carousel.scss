@@ -3,11 +3,14 @@
 
 .wrapper {
   height: 100vh;
+  background-image: url("../../img/bg-elipse.svg");
+  background-repeat: no-repeat;
+  // background-position: 330px 135px;
+  background-position: 47.36% -33.42%;
 }
 
 .carousel-wrapper {
   height: 89%;
-
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -16,23 +19,22 @@
 
 .plate-text {
   height: 100%;
-  // position: relative;
-
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
   align-items: flex-end;
+  position: relative;
+  left: -9%;
   > .title {
     @include set-font-size(52px);
     @include rem-line-height(75);
     @include letter-spacing(3.24);
-    // position: relative;
+    position: relative;
   }
 
   > .description-wrapper {
     display: flex;
     flex-flow: column wrap;
-    // justify-content: center;
     align-items: flex-end;
 
     > .description {
@@ -48,24 +50,15 @@
       justify-self: center;
     }
   }
-  > .button {
-    display: flex;
-    width: 260px;
-    height: 73px;
-    // padding: 24.7px 68.1px 22.3px 99.9px;
-    background-color: $color-black;
-    color: $color-white;
-    border-radius: 33px;
-    @include set-font-size(20px);
-    @include rem-line-height(50);
-    @include letter-spacing(1);
-    text-transform: uppercase;
-    justify-content: space-evenly;
-    align-items: center;
-  }
 }
 
 .plate-section {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 0 0 1;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   > .image {
     width: 812px;
     height: 372px;

@@ -1,5 +1,8 @@
 .wrapper {
   height: 100vh;
+  background-image: url("../../img/bg-elipse.svg");
+  background-repeat: no-repeat;
+  background-position: 47.36% -33.42%;
 }
 
 .carousel-wrapper {
@@ -34,6 +37,8 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  position: relative;
+  left: -9%;
 }
 
 .plate-text > .title {
@@ -43,6 +48,7 @@
   line-height: 75;
   line-height: 4.6875rem;
   letter-spacing: 0.2025rem;
+  position: relative;
 }
 
 .plate-text > .description-wrapper {
@@ -78,28 +84,24 @@
       justify-self: center;
 }
 
-.plate-text > .button {
+.plate-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 260px;
-  height: 73px;
-  background-color: #161616;
-  color: #ffffff;
-  border-radius: 33px;
-  font-size: 20px;
-  /* add PX (or original value) as backup */
-  /* do nothing, "inherit" has no unit */
-  line-height: 50;
-  line-height: 3.125rem;
-  letter-spacing: 0.0625rem;
-  text-transform: uppercase;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 1;
+          flex: 0 0 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
 }
 
 .plate-section > .image {
