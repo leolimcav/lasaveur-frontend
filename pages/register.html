@@ -4,7 +4,127 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>LASAVEUR</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Darker+Grotesque:700|Didact+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/base/base.css" />
+    <link rel="stylesheet" href="./css/objects/objects.css" />
+    <link rel="stylesheet" href="./css/components/components.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="section-wrapper">
+      <section class="right-container">
+        <img src="../img/logo.png" alt="logo" />
+        <h1>Already have an account?</h1>
+        <a href="./login.html"><button>LOGIN NOW!</button></a>
+      </section>
+      <section class="left-container">
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Personal</legend>
+            <label for="fullName">
+              <input
+                type="text"
+                name="fullName"
+                id="fullName"
+                class="input"
+                placeholder="Full Name"
+              />
+            </label>
+            <label for="cpf">
+              <input
+                type="text"
+                name="cpf"
+                id="cpf"
+                class="input"
+                placeholder="CPF"
+              />
+            </label>
+            <label for="email">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="input"
+                placeholder="Email"
+              />
+            </label>
+            <label for="username">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                class="input"
+                placeholder="Username"
+              />
+            </label>
+            <label for="password">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="input"
+                placeholder="Password"
+              />
+            </label>
+            <label for="passwordConfirm">
+              <input
+                type="password"
+                name="passwordConfirm"
+                id="passwordConfirm"
+                class="input"
+                placeholder="Confirm Password"
+              />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Address</legend>
+            <label for="street">
+              <input
+                type="text"
+                name="street"
+                id="street"
+                class="input"
+                placeholder="street"
+              />
+            </label>
+            <label for="number">
+              <input
+                type="text"
+                name="number"
+                id="number"
+                class="input"
+                placeholder="Number"
+              />
+            </label>
+            <label for="zipCode">
+              <input
+                type="text"
+                name="zipCode"
+                id="zipCode"
+                class="input"
+                placeholder="Zip Code"
+              />
+            </label>
+            <label for="complement">
+              <input
+                type="text"
+                name="complement"
+                id="complement"
+                class="input"
+                placeholder="Complement"
+              />
+            </label>
+          </fieldset>
+          <button type="submit">SIGN UP</button>
+        </form>
+      </section>
+    </div>
+  </body>
 </html>
